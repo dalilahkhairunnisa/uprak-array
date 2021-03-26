@@ -9,9 +9,9 @@ $sql    = "DELETE FROM produk WHERE id_produk='$id_produk'";
 $query  = mysqli_query($conn, $sql);
 
 if ($query) {
-    header('Location: index.php');
+    header('Location: listproduk.php');
 
 }else {
-    header('Location: index.php?status=gagal');
+    header('Location: listproduk.php?status=gagal');
 }
 ?>
